@@ -1,40 +1,128 @@
+---
 items:
-  - name: "trout"
+  - name: trout
     value: 10
-    rarity: "common"
+    rarity: common
     responses:
-      - "{n} caught a trout! ₪10 UNICOIN™ added to their balance."
-      - "A trout! {n} earned ₪10 UNICOIN™."
-  - name: "salmon"
+      - "{n} caught a trout! 🎣 +10 UNICOIN™ added to their balance. Looks like
+        someone's a pro at this fishing thing!"
+      - A beautiful trout! {n} earned +10 UNICOIN™.
+      - "{n} reels in a trout! +10 UNICOIN™ for their efforts."
+  - name: salmon
     value: 20
-    rarity: "uncommon"
+    rarity: uncommon
     responses:
-      - "{n} caught a salmon! ₪20 UNICOIN™ added to their balance."
-      - "A salmon! {n} earned ₪20 UNICOIN™."
-  - name: "old boot"
+      - Wow, a huge salmon! {n} earned 🐟 +20 UNICOIN™. Looks like they're on a
+        roll!
+      - "{n} reels in a salmon! 🐟 +20 UNICOIN™ for their catch. Looks like
+        dinner is served!"
+      - "{n} caught a big salmon! 🐟 +20 UNICOIN™ added to their balance. That's
+        one big fish story!"
+  - name: lobster
+    value: 25
+    rarity: rare
+    responses:
+      - "{n} caught a tasty lobster! 🦞 +25 UNICOIN™ added to their balance.
+        Looks like they're in for a treat!"
+      - Delicious lobster! {n} earned 🦞 +25 UNICOIN™. Time to break out the
+        butter!
+      - "{n} reels in a lobster! 🦞 +25 UNICOIN™ for their catch. Looks like a
+        fancy dinner tonight!"
+  - name: old boot
     value: -5
-    rarity: "common"
+    rarity: common
     responses:
-      - "{n} caught an old boot... ₪5 UNICOIN™ deducted from their balance."
-      - "An old boot... {n} lost ₪5 UNICOIN™."
-
+      - "{n} caught an old boot... 🚪 -5 UNICOIN™ deducted from their balance.
+        Oh well, back to the drawing board!"
+      - Just an old boot... {n} lost 🚪 -5 UNICOIN™. Better luck next time!
+      - "{n} reels in an old boot... 🚪 -5 UNICOIN™ lost. Not quite what they
+        were hoping for."
+  - name: junk
+    value: -10
+    rarity: common
+    responses:
+      - "{n} caught a piece of junk... 🗑 -10 UNICOIN™ deducted from their
+        balance. Looks like they're cleaning up the ocean one catch at a time!"
+      - Just a piece of junk... {n} lost 🗑 -10 UNICOIN™. Better luck next time!
+      - "{n} reels in a piece of junk... 🗑 -10 UNICOIN™ lost. Not the treasure
+        they were looking for."
+  - name: octopus
+    value: 30
+    rarity: rare
+    responses:
+      - "{n} caught a giant octopus! 🐙 +30 UNICOIN™ added to their balance.
+        Looks like they're in for an adventure!"
+      - Wow, a huge octopus! {n} earned 🐙 +30 UNICOIN™. Time to put their arm
+        wrestling skills to the test!
+      - "{n} reels in an octopus! 🐙 +30 UNICOIN™ for their catch. Looks like
+        it's sushi night!"
+  - name: pearl
+    value: 75
+    rarity: extremely rare
+    responses:
+      - "{n} found a pearl in their catch! 💎 +75 UNICOIN™ added to their
+        balance. Looks like they hit the jackpot!"
+      - What luck! {n} earned 💎 +75 UNICOIN™ for finding a pearl. Time to buy a
+        new fishing rod!
+      - "{n} reels in a pearl! 💎 +75 UNICOIN™ for their unique catch. Looks
+        like they're in for a treat!"
+  - name: whale
+    value: 100
+    rarity: legendary
+    responses:
+      - "{n} caught a majestic whale! 🐋 +100 UNICOIN™ added to their balance.
+        Looks like they're the new king of the ocean!"
+      - Incredible catch! {n} earned 🐋 +100 UNICOIN™ for catching a whale. Time
+        to start a new trophy room!
+  - name: seaweed
+    value: -2
+    rarity: common
+    responses:
+      - "{n} caught a bunch of seaweed... 🌿 -2 UNICOIN™ deducted from their
+        balance. Looks like they're in for a salad tonight!"
+      - Just a bunch of seaweed... {n} lost 🌿 -2 UNICOIN™. Better luck next
+        time!
+      - "{n} reels in a bunch of seaweed... 🌿 -2 UNICOIN™ lost. Not quite what
+        they were hoping for."
+  - name: old tire
+    value: -15
+    rarity: uncommon
+    responses:
+      - "{n} caught an old tire... -15 UNICOIN™ deducted from their balance."
+      - Just an old tire... {n} lost -15 UNICOIN™.
+      - "{n} reels in an old tire... -15 UNICOIN™ lost."
+  - name: used condom
+    value: -25
+    rarity: rare
+    responses:
+      - "{n} caught a used condom... 🤢 -25 UNICOIN™ deducted from their
+        balance. Gross!"
+      - Just a used condom... {n} lost 🤢 -25 UNICOIN™. Ewwww!
+      - "{n} reels in a used condom... 🤢 -25 UNICOIN™ lost. Time to disinfect
+        the fishing rod."
+  - name: empty can
+    value: -5
+    rarity: common
+    responses:
+      - "{n} caught an empty can... -5 UNICOIN™ deducted from their balance."
+      - Just an empty can... {n} lost -5 UNICOIN™.
 events:
-  - name: "cast"
+  - name: cast
     responses:
       - "{n} casts their line."
-  - name: "bite"
+  - name: bite
     responses:
       - "{n} feels a bite on their line, {n}! Quick, reel in!"
-      - "A fish is biting {n}, reel in fast!"
-  - name: "fail_catch"
+      - A fish is biting {n}, reel in fast!
+  - name: fail_catch
     responses:
-      - "Too slow {n}! The fish got away."
-      - "You missed the catch {n}, the fish got away."
-  - name: "premature_reel"
+      - Too slow {n}! The fish got away.
+      - You missed the catch {n}, the fish got away.
+  - name: premature_reel
     responses:
-      - "No fish are biting yet {n}."
-      - "Hold on {n}, a fish isn't biting yet."
-  - name: "check_money"
-    responses: 
-    - "HELLO {n}, Your current balance is ₪{money} UNICOIN™"
-    - "Hi {n}, You have ₪{money} UNICOIN™ in your account."
+      - No fish are biting yet {n}.
+      - Hold on {n}, a fish isn't biting yet.
+  - name: check_money
+    responses:
+      - HELLO {n}, Your current balance is {money} UNICOIN™
+      - Hi {n}, You have {money} UNICOIN™ in your account.
