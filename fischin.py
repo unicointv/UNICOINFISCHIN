@@ -113,6 +113,6 @@ class FishingBot(irc.bot.SingleServerIRCBot):
 
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
-    bot = irc.bot.SingleServerIRCBot(...)
+    bot = FishingBot(channel="#gamme", nickname="unicoin", server="irc.buttes.org")
     loop.run_until_complete(bot.start())
     loop.run_forever()
