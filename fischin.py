@@ -4,7 +4,7 @@ import ssl
 import random
 import yaml
 import time
-import threading
+import asyncio
 import logging
 from datetime import datetime, timedelta
 from tinydb import TinyDB, Query
@@ -37,16 +37,15 @@ class FishingBot(irc.bot.SingleServerIRCBot):
             self.check_money(c, nick)
     
     def cast(self, c, nick):
-            self.players[nick] = {"status": "casting", "cast_time": datetime.now()}
-            for event in self.content["events"]:
-                if event["name"] == "cast":
-                    self.send_response(c, random.choice(event["responses"]).format(n = nick))
-            timer_thread = threading.Thread(target=self.start_timer, args=(c, nick))
-            timer_thread.start()
+    self.players[nick] = {"status": "casting", "cast_time": datetime.now()}
+    for event in self.content["events"]:
+        if event["name"] == "cast":
+            self.send_response(c, random.choice(event["responses"]).format(n = nick))
+    asyncio.ensure_future(self.start_timer(c, nick))
 
-    def start_timer(self, c, nick):
-        time.sleep(random.randint(5,10))
-        self.bite(c, nick)
+    async def start_timer(self, c, nick):
+    await asyncio.sleep(random.randint(5,10))
+    self.bite(c, nick)
 
     def bite(self, c, nick):
         self.players[nick].update({"status": "biting", "bite_time": datetime.now()})
@@ -111,9 +110,9 @@ class FishingBot(irc.bot.SingleServerIRCBot):
     def on_ping(self, c, e):
         c.pong(e.arguments[0])
     
-def main():
-        bot = FishingBot(channel="#gamme", nickname="unicoin", server="irc.buttes.org")
-        bot.start()
 
 if __name__ == "__main__":
-    main()
+    loop = asyncio.get_event_loop()
+    bot = irc.bot.SingleServerIRCBot(...)
+    loop.run_until_complete(bot.start())
+    loop.run_forever()
