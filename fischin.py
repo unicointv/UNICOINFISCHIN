@@ -37,15 +37,15 @@ class FishingBot(irc.bot.SingleServerIRCBot):
             self.check_money(c, nick)
     
     def cast(self, c, nick):
-    self.players[nick] = {"status": "casting", "cast_time": datetime.now()}
-    for event in self.content["events"]:
-        if event["name"] == "cast":
-            self.send_response(c, random.choice(event["responses"]).format(n = nick))
-    asyncio.ensure_future(self.start_timer(c, nick))
+        self.players[nick] = {"status": "casting", "cast_time": datetime.now()}
+        for event in self.content["events"]:
+            if event["name"] == "cast":
+                self.send_response(c, random.choice(event["responses"]).format(n = nick))
+        asyncio.ensure_future(self.start_timer(c, nick))
 
     async def start_timer(self, c, nick):
-    await asyncio.sleep(random.randint(5,10))
-    self.bite(c, nick)
+        await asyncio.sleep(random.randint(5,10))
+        self.bite(c, nick)
 
     def bite(self, c, nick):
         self.players[nick].update({"status": "biting", "bite_time": datetime.now()})
