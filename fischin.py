@@ -3,10 +3,13 @@ import irc.strings
 import ssl
 import random
 import yaml
-import sched, time
+import time
 import threading
+import logging
 from datetime import datetime, timedelta
 from tinydb import TinyDB, Query
+
+logging.basicConfig(level=logging.DEBUG)
 
 class FishingBot(irc.bot.SingleServerIRCBot):
     def __init__(self, channel, nickname, server, port=6697):

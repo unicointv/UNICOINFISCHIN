@@ -109,20 +109,38 @@ items:
 events:
   - name: cast
     responses:
-      - "{n} casts their line."
+      - "{n} is trying their luck, casting their line! 🎣"
+      - "Looks like {n} is feeling lucky, they've cast their line! 🎣"
+      - "{n} is making a wish and throwing their line, let's hope a big one bites! 🐟"
+      - "{n} is making a cast, let's see if they can reel in a big one! 🐠"
+      - "{n} is casting out, let's see if they can catch a trophy fish! 🎣"
   - name: bite
     responses:
       - "{n} feels a bite on their line, {n}! Quick, reel in!"
       - A fish is biting {n}, reel in fast!
+      - "{n} feels a tug on their line! 🐟"
+      - "Something's biting, {n} better reel it in before it gets away! 🎣"
+      - "Looks like {n} has a catch on the line, this could be a big one! 🐠"
+      - "Looks like {n} has a fish on the line, let's see if they can reel it in! 🐟"
   - name: fail_catch
     responses:
-      - Too slow {n}! The fish got away.
-      - You missed the catch {n}, the fish got away.
+      - "Too slow {n}! The fish got away."
+      - "You missed the catch {n}, better luck next time! 🐟"
+      - "Close but no cigar {n}, the fish got away. 🐠"
+      - "Looks like {n} didn't reel in the catch this time. 🎣"
+      - "Sorry {n}, the fish got away this"
   - name: premature_reel
     responses:
-      - No fish are biting yet {n}.
-      - Hold on {n}, a fish isn't biting yet.
+      - "Hold your horses {n}, the fish aren't biting yet."
+      - "Patience is a virtue {n}, the fish aren't biting yet."
+      - "Not so fast {n}, the fish aren't biting yet. 🐟"
+      - "Don't be so eager {n}, the fish aren't biting yet. 🐠"
+      - "The fish aren't ready to be caught yet {n}, wait for a bite before reeling in. 🎣"
+      
   - name: check_money
     responses:
-      - HELLO {n}, Your current balance is {money} UNICOIN™
-      - Hi {n}, You have {money} UNICOIN™ in your account.
+      - "HELLO {n}, Your current balance is {money} UNICOIN™"
+      - "Hi {n}, You have {money} UNICOIN™ in your account."
+      - "Hey {n}, you have {money} UNICOIN™ in your account, time to catch some more fish! 🎣"
+      - "Hey {n}, your balance is {money} UNICOIN™, time to catch some more fish! 🐟"
+      - "Hello {n}, you have {money} UNICOIN™ in your account, time to reel in some big catches! 🐠"
