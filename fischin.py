@@ -20,9 +20,6 @@ class FishingBot(irc.bot.SingleServerIRCBot):
         with open('content.yaml', 'r', encoding='utf-8') as yaml_file:
             self.content = yaml.safe_load(yaml_file)
 
-    def on_nicknameinuse(self, c, e):
-        c.nick(c.get_nickname() + "_")
-
     def on_welcome(self, c, e):
         c.join(self.channel)
 
