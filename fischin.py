@@ -45,9 +45,9 @@ class FishingBot(irc.bot.SingleServerIRCBot):
 
     async def start_timer(self, c, nick):
         await asyncio.sleep(random.randint(5,10))
-        self.bite(c, nick)
+        asyncio.ensure_future(self.bite(c, nick))
 
-    def bite(self, c, nick):
+    async def bite(self, c, nick):
         self.players[nick].update({"status": "biting", "bite_time": datetime.now()})
         for event in self.content["events"]:
             if event["name"] == "bite":
