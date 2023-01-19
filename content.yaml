@@ -31,10 +31,10 @@ items:
     value: -5
     rarity: common
     responses:
-      - "{n} caught an old boot... 🚪 -5 UNICOIN™ deducted from their balance.
+      - "{n} caught an old boot... 👢 -5 UNICOIN™ deducted from their balance.
         Oh well, back to the drawing board!"
-      - Just an old boot... {n} lost 🚪 -5 UNICOIN™. Better luck next time!
-      - "{n} reels in an old boot... 🚪 -5 UNICOIN™ lost. Not quite what they
+      - Just an old boot... {n} lost 👢 -5 UNICOIN™. Better luck next time!
+      - "{n} reels in an old boot... 👢 -5 UNICOIN™ lost. Not quite what they
         were hoping for."
   - name: junk
     value: -10
