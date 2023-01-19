@@ -1,4 +1,3 @@
----
 items:
   - name: trout
     value: 10
@@ -116,7 +115,7 @@ events:
       - "{n} is casting out, let's see if they can catch a trophy fish! 🎣"
   - name: bite
     responses:
-      - "{n} feels a bite on their line, {n}! Quick, reel in!"
+      - "{n} feels a bite on their line! Quick, reel in!"
       - A fish is biting {n}, reel in fast!
       - "{n} feels a tug on their line! 🐟"
       - "Something's biting, {n} better reel it in before it gets away! 🎣"
@@ -128,7 +127,7 @@ events:
       - "You missed the catch {n}, better luck next time! 🐟"
       - "Close but no cigar {n}, the fish got away. 🐠"
       - "Looks like {n} didn't reel in the catch this time. 🎣"
-      - "Sorry {n}, the fish got away this"
+      - "Sorry {n}, the fish got away this time."
   - name: premature_reel
     responses:
       - "Hold your horses {n}, the fish aren't biting yet."
