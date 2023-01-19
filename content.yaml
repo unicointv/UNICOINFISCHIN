@@ -1,0 +1,40 @@
+items:
+  - name: "trout"
+    value: 10
+    rarity: "common"
+    responses:
+      - "{n} caught a trout! ₪10 UNICOIN™ added to their balance."
+      - "A trout! {n} earned ₪10 UNICOIN™."
+  - name: "salmon"
+    value: 20
+    rarity: "uncommon"
+    responses:
+      - "{n} caught a salmon! ₪20 UNICOIN™ added to their balance."
+      - "A salmon! {n} earned ₪20 UNICOIN™."
+  - name: "old boot"
+    value: -5
+    rarity: "common"
+    responses:
+      - "{n} caught an old boot... ₪5 UNICOIN™ deducted from their balance."
+      - "An old boot... {n} lost ₪5 UNICOIN™."
+
+events:
+  - name: "cast"
+    responses:
+      - "{n} casts their line."
+  - name: "bite"
+    responses:
+      - "{n} feels a bite on their line, {n}! Quick, reel in!"
+      - "A fish is biting {n}, reel in fast!"
+  - name: "fail_catch"
+    responses:
+      - "Too slow {n}! The fish got away."
+      - "You missed the catch {n}, the fish got away."
+  - name: "premature_reel"
+    responses:
+      - "No fish are biting yet {n}."
+      - "Hold on {n}, a fish isn't biting yet."
+  - name: "check_money"
+    responses: 
+    - "HELLO {n}, Your current balance is ₪{money} UNICOIN™"
+    - "Hi {n}, You have ₪{money} UNICOIN™ in your account."
