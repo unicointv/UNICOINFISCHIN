@@ -112,7 +112,7 @@ class FishingBot(irc.bot.SingleServerIRCBot):
         c.pong(e.arguments[0])
     
 def main():
-        bot = FishingBot(channel="#gamme", nickname="unicoin", server="irc.libera.chat")
+        bot = FishingBot(channel="#gamme", nickname="unicoin", server="irc.buttes.org")
         bot.start()
 
 if __name__ == "__main__":
