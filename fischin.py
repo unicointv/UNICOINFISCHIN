@@ -70,7 +70,7 @@ class FishingBot(irc.bot.SingleServerIRCBot):
                                 new_balance = current_balance + item[0]["value"]
                                 self.db.update({"balance": new_balance}, self.User.nick == nick)
                             else:
-                                self.db.insert({"nick":nick, "balance": 0})
+                                self.db.insert({"nick":nick, "balance": item[0]["value"]})
                             self.send_response(c, random.choice(item[0]["responses"]).format(n = nick))
                         else:
                             self.players[nick]["status"] = "idle"
