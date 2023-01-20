@@ -3,8 +3,6 @@ import irc.strings
 import ssl
 import random
 import yaml
-import time
-import asyncio
 import logging
 from datetime import datetime, timedelta
 from tinydb import TinyDB, Query
@@ -41,13 +39,9 @@ class FishingBot(irc.bot.SingleServerIRCBot):
         for event in self.content["events"]:
             if event["name"] == "cast":
                 self.send_response(c, random.choice(event["responses"]).format(n = nick))
-        asyncio.ensure_future(self.start_timer(c, nick))
+        # sleep asynchronously for random delay 5-15s and call bite
 
-    async def start_timer(self, c, nick):
-        await asyncio.sleep(random.randint(5,10))
-        asyncio.ensure_future(self.bite(c, nick))
-
-    async def bite(self, c, nick):
+    def bite(self, c, nick):
         self.players[nick].update({"status": "biting", "bite_time": datetime.now()})
         for event in self.content["events"]:
             if event["name"] == "bite":
@@ -112,7 +106,5 @@ class FishingBot(irc.bot.SingleServerIRCBot):
     
 
 if __name__ == "__main__":
-    loop = asyncio.get_event_loop()
     bot = FishingBot(channel="#gamme", nickname="unicoin", server="irc.buttes.org")
-    loop.run_until_complete(bot.start())
-    loop.run_forever()
+    bot.start()
