@@ -1,145 +1,170 @@
 items:
-  - name: trout
-    value: 10
-    rarity: common
+  - name: Skate
+    value: 40
     responses:
-      - "{n} caught a trout! 🎣 +10 UNICOIN™ added to their balance. Looks like
-        someone's a pro at this fishing thing!"
-      - A beautiful trout! {n} earned +10 UNICOIN™.
-      - "{n} reels in a trout! +10 UNICOIN™ for their efforts."
-  - name: salmon
-    value: 20
-    rarity: uncommon
+      - >-
+        {n}, you caught a Skate worth 40 unicoins! This flat fish is a
+        delicacy, especially grilled with lemon and butter.
+  - name: The Holy Sudarium (Veil of Veronica)
+    value: 150
     responses:
-      - Wow, a huge salmon! {n} earned 🐟 +20 UNICOIN™. Looks like they're on a
-        roll!
-      - "{n} reels in a salmon! 🐟 +20 UNICOIN™ for their catch. Looks like
-        dinner is served!"
-      - "{n} caught a big salmon! 🐟 +20 UNICOIN™ added to their balance. That's
-        one big fish story!"
-  - name: lobster
-    value: 25
-    rarity: rare
+      - >-
+        {n}, you caught The Holy Sudarium (Veil of Veronica) worth 150
+        unicoins! This revered relic is said to have the image of Jesus' face on
+        it, a priceless catch for any relic collector.
+  - name: The Holy Relic of St. Francis Xavier's right arm
+    value: 200
     responses:
-      - "{n} caught a tasty lobster! 🦞 +25 UNICOIN™ added to their balance.
-        Looks like they're in for a treat!"
-      - Delicious lobster! {n} earned 🦞 +25 UNICOIN™. Time to break out the
-        butter!
-      - "{n} reels in a lobster! 🦞 +25 UNICOIN™ for their catch. Looks like a
-        fancy dinner tonight!"
-  - name: old boot
-    value: -5
-    rarity: common
-    responses:
-      - "{n} caught an old boot... 👢 -5 UNICOIN™ deducted from their balance.
-        Oh well, back to the drawing board!"
-      - Just an old boot... {n} lost 👢 -5 UNICOIN™. Better luck next time!
-      - "{n} reels in an old boot... 👢 -5 UNICOIN™ lost. Not quite what they
-        were hoping for."
-  - name: junk
-    value: -10
-    rarity: common
-    responses:
-      - "{n} caught a piece of junk... 🗑 -10 UNICOIN™ deducted from their
-        balance. Looks like they're cleaning up the ocean one catch at a time!"
-      - Just a piece of junk... {n} lost 🗑 -10 UNICOIN™. Better luck next time!
-      - "{n} reels in a piece of junk... 🗑 -10 UNICOIN™ lost. Not the treasure
-        they were looking for."
-  - name: octopus
-    value: 30
-    rarity: rare
-    responses:
-      - "{n} caught a giant octopus! 🐙 +30 UNICOIN™ added to their balance.
-        Looks like they're in for an adventure!"
-      - Wow, a huge octopus! {n} earned 🐙 +30 UNICOIN™. Time to put their arm
-        wrestling skills to the test!
-      - "{n} reels in an octopus! 🐙 +30 UNICOIN™ for their catch. Looks like
-        it's sushi night!"
-  - name: pearl
-    value: 75
-    rarity: extremely rare
-    responses:
-      - "{n} found a pearl in their catch! 💎 +75 UNICOIN™ added to their
-        balance. Looks like they hit the jackpot!"
-      - What luck! {n} earned 💎 +75 UNICOIN™ for finding a pearl. Time to buy a
-        new fishing rod!
-      - "{n} reels in a pearl! 💎 +75 UNICOIN™ for their unique catch. Looks
-        like they're in for a treat!"
-  - name: whale
+      - >-
+        {n}, you caught The Holy Relic of St. Francis Xavier's right arm
+        worth 200 unicoins! A highly sought-after relic, this catch is a
+        treasure for any devout collector.
+  - name: Donald J Trump Presidential Coin
     value: 100
-    rarity: legendary
     responses:
-      - "{n} caught a majestic whale! 🐋 +100 UNICOIN™ added to their balance.
-        Looks like they're the new king of the ocean!"
-      - Incredible catch! {n} earned 🐋 +100 UNICOIN™ for catching a whale. Time
-        to start a new trophy room!
-  - name: seaweed
-    value: -2
-    rarity: common
+      - >-
+        {n}, you caught a Donald J Trump Presidential Coin worth 100
+        unicoins! A valuable catch for any political collector, this coin is a
+        piece of history.
+  - name: Acadian Redfish
+    value: 50
     responses:
-      - "{n} caught a bunch of seaweed... 🌿 -2 UNICOIN™ deducted from their
-        balance. Looks like they're in for a salad tonight!"
-      - Just a bunch of seaweed... {n} lost 🌿 -2 UNICOIN™. Better luck next
-        time!
-      - "{n} reels in a bunch of seaweed... 🌿 -2 UNICOIN™ lost. Not quite what
-        they were hoping for."
-  - name: old tire
-    value: -15
-    rarity: uncommon
+      - >-
+        {n}, you caught an Acadian Redfish worth 50 unicoins! This fish is a
+        local delicacy, perfect for a seafood dinner.
+  - name: Red Snapper
+    value: 60
     responses:
-      - "{n} caught an old tire... -15 UNICOIN™ deducted from their balance."
-      - Just an old tire... {n} lost -15 UNICOIN™.
-      - "{n} reels in an old tire... -15 UNICOIN™ lost."
-  - name: used condom
-    value: -25
-    rarity: rare
+      - >-
+        {n}, you caught a Red Snapper worth 60 unicoins! This fish is a
+        must-have for any seafood lover's catch of the day.
+  - name: Squid
+    value: 30
     responses:
-      - "{n} caught a used condom... 🤢 -25 UNICOIN™ deducted from their
-        balance. Gross!"
-      - Just a used condom... {n} lost 🤢 -25 UNICOIN™. Ewwww!
-      - "{n} reels in a used condom... 🤢 -25 UNICOIN™ lost. Time to disinfect
-        the fishing rod."
-  - name: empty can
-    value: -5
-    rarity: common
+      - >-
+        {n}, you caught a Squid worth 30 unicoins! This sea creature is a
+        delicacy, perfect for a sushi roll.
+  - name: The Holy Relic of St. Padre Pio's blood
+    value: 200
     responses:
-      - "{n} caught an empty can... -5 UNICOIN™ deducted from their balance."
-      - Just an empty can... {n} lost -5 UNICOIN™.
+      - >-
+        {n}, you caught The Holy Relic of St. Padre Pio's blood worth 200
+        unicoins! A highly sought-after relic, this catch is a treasure for any
+        devout collector.
+  - name: Filet-O-Fisch
+    value: -10
+    responses:
+      - >-
+        {n}, you caught a Filet-O-Fisch worth -10 unicoins. It's not a
+        traditional catch, but it's definitely a unique addition to your fishing
+        tale.
+  - name: The Holy Icon of Our Lady of Guadalupe
+    value: 150
+    responses:
+      - >-
+        {n}, you caught The Holy Icon of Our Lady of Guadalupe worth 150
+        unicoins! This revered relic is said to have been miraculously imprinted
+        with an image of the Virgin Mary, a priceless catch for any relic
+        collector.
+  - name: 'GQ(2,2)'
+    value: 50
+    responses:
+      - >-
+        {n}, you caught a GQ(2,2) worth 50 unicoins! This mathematical object
+        is a type of Generalized Quadrangle, used in the study of finite
+        geometry.
+  - name: Baofeng UV-5R Radio
+    value: 30
+    responses:
+      - >-
+        {n}, you caught a Baofeng UV-5R Radio worth 30 unicoins! A popular
+        choice for amateur radio enthusiasts and emergency responders.
+  - name: Grey Goose Vodka
+    value: 40
+    responses:
+      - >-
+        {n}, you caught a bottle of Grey Goose Vodka worth 40 unicoins! A
+        premium choice for any vodka lover.
+  - name: Saffron
+value: 50
+responses:
+  - >-
+    {n}, you caught Saffron worth 50 unicoins! A highly valued spice, used to
+    add flavor and color to dishes.
+  - name: The Holy Relic of St. John Paul II's Rosary
+    value: 200
+    responses: null
+  - >-
+    {n}, you caught The Holy Relic of St. John Paul II's Rosary worth 200
+    unicoins! A highly sought-after relic, this catch is a treasure for any
+    devout collector.
+  - name: Starfish
+    value: 20
+    responses: null
+  - >-
+    {n}, you caught a Starfish worth 20 unicoins! A unique addition to any
+    ocean-themed collection.
+  - name: The Holy Relic of St. Therese of Lisieux's dress
+    value: 150
+    responses: null
+  - >-
+    {n}, you caught The Holy Relic of St. Therese of Lisieux's dress worth
+    150 unicoins! A highly sought-after relic, this catch is a treasure for any
+    devout collector.
+  - name: Octopus
+    value: 35
+    responses: null
+  - >-
+    {n}, you caught an Octopus worth 35 unicoins! A delicacy in many
+    cultures, perfect for a sushi roll.
+  - name: The Holy Relic of St. Anthony of Padua's tongue
+    value: 200
+    responses: null
+  - >-
+    {n}, you caught The Holy Relic of St. Anthony of Padua's tongue worth 200
+    unicoins! A highly sought-after relic, this catch is a treasure for any
+    devout collector.
+  - name: The Holy Relic of St. Michael the Archangel's sword
+    value: 150
+    responses: null
+  - >-
+    {n}, you caught The Holy Relic of St. Michael the Archangel's sword worth
+    150 unicoins! A highly sought-after relic, this catch is a treasure for any
+    devout collector.
 events:
   - name: cast
     responses:
-      - "{n} is trying their luck, casting their line! 🎣"
-      - "Looks like {n} is feeling lucky, they've cast their line! 🎣"
-      - "{n} is making a wish and throwing their line, let's hope a big one bites! 🐟"
-      - "{n} is making a cast, let's see if they can reel in a big one! 🐠"
-      - "{n} is casting out, let's see if they can catch a trophy fish! 🎣"
+      - "{n} is trying their luck, casting their line! \U0001F3A3"
+      - "Looks like {n} is feeling lucky, they've cast their line! \U0001F3A3"
+      - "{n} is making a wish and throwing their line, let's hope a big one bites! \U0001F41F"
+      - "{n} is making a cast, let's see if they can reel in a big one! \U0001F420"
+      - "{n} is casting out, let's see if they can catch a trophy fish! \U0001F3A3"
   - name: bite
     responses:
-      - "{n} feels a bite on their line! Quick, reel in!"
-      - A fish is biting {n}, reel in fast!
-      - "{n} feels a tug on their line! 🐟"
-      - "Something's biting, {n} better reel it in before it gets away! 🎣"
-      - "Looks like {n} has a catch on the line, this could be a big one! 🐠"
-      - "Looks like {n} has a fish on the line, let's see if they can reel it in! 🐟"
+      - '{n} feels a bite on their line! Quick, reel in!'
+      - 'A fish is biting {n}, reel in fast!'
+      - "{n} feels a tug on their line! \U0001F41F"
+      - "Something's biting, {n} better reel it in before it gets away! \U0001F3A3"
+      - "Looks like {n} has a catch on the line, this could be a big one! \U0001F420"
+      - "Looks like {n} has a fish on the line, let's see if they can reel it in! \U0001F41F"
   - name: fail_catch
     responses:
-      - "Too slow {n}! The fish got away."
-      - "You missed the catch {n}, better luck next time! 🐟"
-      - "Close but no cigar {n}, the fish got away. 🐠"
-      - "Looks like {n} didn't reel in the catch this time. 🎣"
-      - "Sorry {n}, the fish got away this time."
+      - 'Too slow {n}! The fish got away.'
+      - "You missed the catch {n}, better luck next time! \U0001F41F"
+      - "Close but no cigar {n}, the fish got away. \U0001F420"
+      - "Looks like {n} didn't reel in the catch this time. \U0001F3A3"
+      - 'Sorry {n}, the fish got away this time.'
   - name: premature_reel
     responses:
-      - "Hold your horses {n}, the fish aren't biting yet."
-      - "Patience is a virtue {n}, the fish aren't biting yet."
-      - "Not so fast {n}, the fish aren't biting yet. 🐟"
-      - "Don't be so eager {n}, the fish aren't biting yet. 🐠"
-      - "The fish aren't ready to be caught yet {n}, wait for a bite before reeling in. 🎣"
-      
+      - 'Hold your horses {n}, the fish aren''t biting yet.'
+      - 'Patience is a virtue {n}, the fish aren''t biting yet.'
+      - "Not so fast {n}, the fish aren't biting yet. \U0001F41F"
+      - "Don't be so eager {n}, the fish aren't biting yet. \U0001F420"
+      - "The fish aren't ready to be caught yet {n}, wait for a bite before reeling in. \U0001F3A3"
   - name: check_money
     responses:
-      - "HELLO {n}, Your current balance is {money} UNICOIN™"
-      - "Hi {n}, You have {money} UNICOIN™ in your account."
-      - "Hey {n}, you have {money} UNICOIN™ in your account, time to catch some more fish! 🎣"
-      - "Hey {n}, your balance is {money} UNICOIN™, time to catch some more fish! 🐟"
-      - "Hello {n}, you have {money} UNICOIN™ in your account, time to reel in some big catches! 🐠"
+      - 'HELLO {n}, Your current balance is {money} UNICOIN™'
+      - 'Hi {n}, You have {money} UNICOIN™ in your account.'
+      - "Hey {n}, you have {money} UNICOIN™ in your account, time to catch some more fish! \U0001F3A3"
+      - "Hey {n}, your balance is {money} UNICOIN™, time to catch some more fish! \U0001F41F"
+      - "Hello {n}, you have {money} UNICOIN™ in your account, time to reel in some big catches! \U0001F420"

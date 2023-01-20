@@ -27,7 +27,7 @@ class FishingBot(irc.bot.SingleServerIRCBot):
     def on_pubmsg(self, c, e):
         nick = e.source.nick
         message = e.arguments[0]
-        if message.startswith("cast"):
+        if message.startswith("cast") or message.startswith("spin"):
             self.cast(c, nick)
         elif message.startswith("reel"):
             self.reel(c, nick)
@@ -39,7 +39,7 @@ class FishingBot(irc.bot.SingleServerIRCBot):
         for event in self.content["events"]:
             if event["name"] == "cast":
                 self.send_response(c, random.choice(event["responses"]).format(n = nick))
-        # sleep asynchronously for random delay 5-15s and call bite
+        self.reactor.scheduler.execute_after(random.randint(5,10),lambda: self.bite(c,nick))
 
     def bite(self, c, nick):
         self.players[nick].update({"status": "biting", "bite_time": datetime.now()})
@@ -55,7 +55,7 @@ class FishingBot(irc.bot.SingleServerIRCBot):
                 if (self.players[nick]["bite_time"] - self.players[nick]["cast_time"]) < timedelta(seconds=15):
                         items = self.content["items"]
                         item = random.choices(items,weights=[1 for item in items],k=1)
-                        if random.randint(0,100)< 50:
+                        if random.randint(0,100)< 80:
                             self.players[nick]["status"] = "idle"
                             user_data = self.db.search(self.User.nick == nick)
                             if user_data:
@@ -106,5 +106,5 @@ class FishingBot(irc.bot.SingleServerIRCBot):
     
 
 if __name__ == "__main__":
-    bot = FishingBot(channel="#gamme", nickname="unicoin", server="irc.buttes.org")
+    bot = FishingBot(channel="#gamme", nickname="unicoin", server="irc.libera.chat")
     bot.start()
