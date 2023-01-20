@@ -106,5 +106,5 @@ class FishingBot(irc.bot.SingleServerIRCBot):
     
 
 if __name__ == "__main__":
-    bot = FishingBot(channel="#gamme", nickname="unicoin", server="irc.libera.chat")
+    bot = FishingBot(channel="#gamme", nickname="unicoin", server="irc.buttes.org")
     bot.start()
