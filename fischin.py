@@ -39,14 +39,23 @@ class FishingBot(irc.bot.SingleServerIRCBot):
     def on_pubmsg(self, c, e):
         nick = e.source.nick
         message = e.arguments[0]
-        if message.startswith("cast") or message.startswith("spin"):
+        if message.startswith("cast") or message.startswith("spin") or message.startswith("fish") or message.startswith("fisch"):
             self.cast(c, nick)
-        elif message.startswith("reel"):
+        elif message.startswith("reel") or message.startswith("catch"):
             self.reel(c, nick)
-        elif message.startswith("money"):
+        elif message.startswith("money") or message.startswith("muney"):
             self.check_money(c, nick)
         elif message.startswith(f"bowl"):
-            self.bowl(c, message[5:])
+            if len(message) == 4:
+                self.bowl(c, nick)
+            else:
+                self.bowl(c, message[5:])
+
+    def on_join(self, c, e):
+        nick = e.source.nick
+        greeting = "\x0304,11" + str.upper(f"welcome to table, {nick}")
+        c.privmsg(self.channel,greeting)
+
 
     def bowl(self, c, nick):
         for event in self.content["events"]:
