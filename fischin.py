@@ -7,6 +7,7 @@ import logging
 from datetime import datetime, timedelta
 from tinydb import TinyDB, Query
 from flask import Flask, make_response
+from threading import Thread
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -28,7 +29,8 @@ class FishingBot(irc.bot.SingleServerIRCBot):
         @app.route('/health', methods=['GET'])
         def health():
             return make_response('', 200)
-        app.run(host='0.0.0.0', port=8000)
+        server_thread = Thread(target=app.run, kwargs={'host':'0.0.0.0', 'port':8000})
+        server_thread.start()
 
     def on_welcome(self, c, e):
         c.join(self.channel)
