@@ -33,7 +33,16 @@ class FishingBot(irc.bot.SingleServerIRCBot):
             self.reel(c, nick)
         elif message.startswith("money"):
             self.check_money(c, nick)
-    
+        elif message.startswith(f"bowl"):
+            self.bowl(c, message[5:])
+
+    def bowl(self, c, nick):
+        for event in self.content["events"]:
+                    if event["name"] == "bowl":
+                        response = random.choice(event["responses"]).format(n = nick)
+                        response = "\x03" + "04" + "," + "01" + response
+                        c.privmsg(self.channel, response)
+
     def cast(self, c, nick):
         self.players[nick] = {"status": "casting", "cast_time": datetime.now()}
         for event in self.content["events"]:
@@ -106,5 +115,5 @@ class FishingBot(irc.bot.SingleServerIRCBot):
     
 
 if __name__ == "__main__":
-    bot = FishingBot(channel="#gamme", nickname="unicoin", server="irc.libera.chat")
+    bot = FishingBot(channel="#gamme", nickname="unicoin", server="irc.buttes.org")
     bot.start()
