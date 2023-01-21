@@ -6,8 +6,11 @@ import yaml
 import logging
 from datetime import datetime, timedelta
 from tinydb import TinyDB, Query
+from flask import Flask, make_response
 
 logging.basicConfig(level=logging.DEBUG)
+
+app = Flask(__name__)
 
 class FishingBot(irc.bot.SingleServerIRCBot):
     def __init__(self, channel, nickname, server, port=6697):
@@ -21,8 +24,15 @@ class FishingBot(irc.bot.SingleServerIRCBot):
         with open('content.yaml', 'r', encoding='utf-8') as yaml_file:
             self.content = yaml.safe_load(yaml_file)
 
+    def start_http_server(self):
+        @app.route('/health', methods=['GET'])
+        def health():
+            return make_response('', 200)
+        app.run(host='0.0.0.0', port=8000)
+
     def on_welcome(self, c, e):
         c.join(self.channel)
+        self.start_http_server()
 
     def on_pubmsg(self, c, e):
         nick = e.source.nick
