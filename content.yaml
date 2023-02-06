@@ -86,8 +86,8 @@ items:
         {n}, you caught a bottle of Grey Goose Vodka worth 40 unicoins! A
         premium choice for any vodka lover.
   - name: Saffron
-value: 50
-responses:
+    value: 50
+    responses:
   - >-
     {n}, you caught Saffron worth 50 unicoins! A highly valued spice, used to
     add flavor and color to dishes.
