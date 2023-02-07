@@ -88,49 +88,49 @@ items:
   - name: Saffron
     value: 50
     responses:
-  - >-
-    {n}, you caught Saffron worth 50 unicoins! A highly valued spice, used to
-    add flavor and color to dishes.
+      - >-
+        {n}, you caught Saffron worth 50 unicoins! A highly valued spice, used to
+        add flavor and color to dishes.
   - name: The Holy Relic of St. John Paul II's Rosary
     value: 200
-    responses: null
-  - >-
-    {n}, you caught The Holy Relic of St. John Paul II's Rosary worth 200
-    unicoins! A highly sought-after relic, this catch is a treasure for any
-    devout collector.
+    responses:
+      - >-
+        {n}, you caught The Holy Relic of St. John Paul II's Rosary worth 200
+        unicoins! A highly sought-after relic, this catch is a treasure for any
+        devout collector.
   - name: Starfish
     value: 20
-    responses: null
-  - >-
-    {n}, you caught a Starfish worth 20 unicoins! A unique addition to any
-    ocean-themed collection.
+    responses:
+      - >-
+        {n}, you caught a Starfish worth 20 unicoins! A unique addition to any
+        ocean-themed collection.
   - name: The Holy Relic of St. Therese of Lisieux's dress
     value: 150
-    responses: null
-  - >-
-    {n}, you caught The Holy Relic of St. Therese of Lisieux's dress worth
-    150 unicoins! A highly sought-after relic, this catch is a treasure for any
-    devout collector.
+    responses:
+      - >-
+        {n}, you caught The Holy Relic of St. Therese of Lisieux's dress worth
+        150 unicoins! A highly sought-after relic, this catch is a treasure for any
+        devout collector.
   - name: Octopus
     value: 35
-    responses: null
-  - >-
-    {n}, you caught an Octopus worth 35 unicoins! A delicacy in many
-    cultures, perfect for a sushi roll.
+    responses:
+      - >-
+        {n}, you caught an Octopus worth 35 unicoins! A delicacy in many
+        cultures, perfect for a sushi roll.
   - name: The Holy Relic of St. Anthony of Padua's tongue
     value: 200
-    responses: null
-  - >-
-    {n}, you caught The Holy Relic of St. Anthony of Padua's tongue worth 200
-    unicoins! A highly sought-after relic, this catch is a treasure for any
-    devout collector.
+    responses:
+      - >-
+        {n}, you caught The Holy Relic of St. Anthony of Padua's tongue worth 200
+        unicoins! A highly sought-after relic, this catch is a treasure for any
+        devout collector.
   - name: The Holy Relic of St. Michael the Archangel's sword
     value: 150
-    responses: null
-  - >-
-    {n}, you caught The Holy Relic of St. Michael the Archangel's sword worth
-    150 unicoins! A highly sought-after relic, this catch is a treasure for any
-    devout collector.
+    responses:
+      - >-
+        {n}, you caught The Holy Relic of St. Michael the Archangel's sword worth
+        150 unicoins! A highly sought-after relic, this catch is a treasure for any
+        devout collector.
 events:
   - name: cast
     responses:
